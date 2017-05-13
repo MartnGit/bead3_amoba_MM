@@ -32,7 +32,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="color.cpp" />
+		<Unit filename="color.hpp" />
+		<Unit filename="jatekmester.cpp" />
+		<Unit filename="jatekmester.hpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="tabla.cpp" />
+		<Unit filename="tabla.hpp" />
+		<Unit filename="widget.cpp" />
+		<Unit filename="widget.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
