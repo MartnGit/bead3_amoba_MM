@@ -4,13 +4,11 @@
 #include "graphics.hpp"
 #include "tabla.hpp"
 
-using namespace genv;
-
 
 class JatekMester
 {
     int XX, YY;
-    event ev;
+    genv::event ev;
     Tabla tabla;
 
 

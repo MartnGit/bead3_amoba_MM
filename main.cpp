@@ -1,15 +1,13 @@
 #include <iostream>
 #include "jatekmester.hpp"
 
-using namespace std;
 
-
-const int XX=500;
-const int YY=500;
+const int XX=700;
+const int YY=700;
 
 int main()
 {
-    JatekMester jatekMester(XX,YY);
+    JatekMester jatekMester(XX, YY);
     jatekMester.EventCycle();
 
     return 0;
