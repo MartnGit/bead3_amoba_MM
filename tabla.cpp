@@ -9,8 +9,6 @@ Tabla::Tabla(int posX_, int posY_, int width_, int height_) : Widget(posX_, posY
     width=width_;
     height=height_;
 
-    colorX.r=colorO.b=255;
-
     colWidth=width/20; //KESOBBI FAZISBAN MAJD: NUMBOXTOL ELKER, SZAMOLAS ATALAKIT
     lineHeight=height/20; //KESOBBI FAZISBAN MAJD: NUMBOXTOL ELKER, SZAMOLAS ATALAKIT
 }
@@ -65,16 +63,10 @@ void Tabla::Draw()
     }
 }
 
-void Tabla::DrawX(int IndexX, int IndexY)
+void Tabla::DrawMark(int IndexX, int IndexY, bool isRed)
 {
-    gout<<color(colorX.r,colorX.g,colorX.b)
-        <<move_to(CalcDrawPosX(IndexX),CalcDrawPosY(IndexY))
-        <<move(1,1)<<box(colWidth-1,lineHeight-1);
-}
-
-void Tabla::DrawO(int IndexX, int IndexY)
-{
-    gout<<color(colorO.r,colorO.g,colorO.b)
-        <<move_to(CalcDrawPosX(IndexX),CalcDrawPosY(IndexY))
+    if(isRed) gout<<color(255,70,70);
+    else gout<<color(70,70,255);
+    gout<<move_to(CalcDrawPosX(IndexX),CalcDrawPosY(IndexY))
         <<move(1,1)<<box(colWidth-1,lineHeight-1);
 }

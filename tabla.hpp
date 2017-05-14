@@ -6,9 +6,10 @@
 
 class Tabla : public Widget
 {
-    Color colorX, colorO;
     int colWidth, lineHeight;
     int clickPosX, clickPosY;
+    int CalcDrawPosX(int IndexX);
+    int CalcDrawPosY(int IndexY);
 public:
     Tabla(int posX_, int posY_, int width_, int height_);
     virtual void Draw();
@@ -16,11 +17,8 @@ public:
 
     int CalcIndexX();
     int CalcIndexY();
-    int CalcDrawPosX(int IndexX);
-    int CalcDrawPosY(int IndexY);
 
-    void DrawX(int IndexX, int IndexY);
-    void DrawO(int IndexX, int IndexY);
+    void DrawMark(int IndexX, int IndexY, bool isRed);
 };
 
 #endif
