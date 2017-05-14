@@ -3,7 +3,8 @@
 using namespace genv;
 
 
-Tabla::Tabla(int, int) : Widget(0,0), width(width_), height(height_)
+Tabla::Tabla(int posX_, int posY_, int width_, int height_) : Widget(posX_, posY_)
 {
-
+    width=width_;
+    height=height_;
 }

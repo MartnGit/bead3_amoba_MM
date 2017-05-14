@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1492431091 source:e:\__cb_projects_for_debug\bead3_amoba_mm\color.cpp
+	"color.hpp"
+
+1492427722 e:\__cb_projects_for_debug\bead3_amoba_mm\color.hpp
+
+1494761769 source:e:\__cb_projects_for_debug\bead3_amoba_mm\jatekmester.cpp
+	"jatekmester.hpp"
+
+1494761981 e:\__cb_projects_for_debug\bead3_amoba_mm\jatekmester.hpp
+	"graphics.hpp"
+	"tabla.hpp"
+
+1494761456 e:\__cb_projects_for_debug\bead3_amoba_mm\tabla.hpp
+	"widget.hpp"
+
+1492731077 e:\__cb_projects_for_debug\bead3_amoba_mm\widget.hpp
+	"graphics.hpp"
+	"color.hpp"
+
+1494761981 source:e:\__cb_projects_for_debug\bead3_amoba_mm\main.cpp
+	<iostream>
+	"jatekmester.hpp"
+
+1492731077 source:e:\__cb_projects_for_debug\bead3_amoba_mm\widget.cpp
+	"widget.hpp"
+
+1494761867 source:e:\__cb_projects_for_debug\bead3_amoba_mm\tabla.cpp
+	"tabla.hpp"
+

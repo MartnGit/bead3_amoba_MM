@@ -1,7 +1,7 @@
 #include "jatekmester.hpp"
 
 
-JatekMester::JatekMester(int XX_, int YY_) : XX(XX_), YY(YY_)
+JatekMester::JatekMester(int XX_, int YY_) : XX(XX_), YY(YY_), tabla(0,0, XX_, YY_) {}
 
 void JatekMester::EventCycle()
 {

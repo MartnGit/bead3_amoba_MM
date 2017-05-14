@@ -8,9 +8,9 @@ class Tabla : public Widget
 {
     Color color_X, color_O;
 public:
-    Tabla(int, int, int width_, int height_);
-    virtual void Draw();
-    virtual void Handle(genv::event ev);
+    Tabla(int posX_, int posY_, int width_, int height_);
+    virtual void Draw() {};
+    virtual void Handle(genv::event ev){};
 };
 
 #endif
