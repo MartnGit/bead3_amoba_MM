@@ -14,17 +14,22 @@ class JatekMester
     NumBox numBox;
 
     std::vector<std::vector<int>> tablaMatrix;
-    //int matrixMeret;
     int indexX, indexY;
     bool isRed;
-
-
-
+    bool raktak;
+    bool win;
+    bool nemTeltBe;
 
 public:
     JatekMester(int XX_, int YY_);
     void EventCycle();
-    bool FiveInARow();
+    void LeRak();
+    void FiveInARow();
+    void FiveInACol();
+    void FiveInDiagonalSE();
+    void FiveInDiagonalSW();
+    void BeteltE();
+    void StartAllapot();
 };
 
 #endif

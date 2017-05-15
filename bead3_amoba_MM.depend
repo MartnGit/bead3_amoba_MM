@@ -4,31 +4,29 @@
 
 1492427722 e:\__cb_projects_for_debug\bead3_amoba_mm\color.hpp
 
-1494803508 source:e:\__cb_projects_for_debug\bead3_amoba_mm\jatekmester.cpp
+1494821935 source:e:\__cb_projects_for_debug\bead3_amoba_mm\jatekmester.cpp
 	"jatekmester.hpp"
-	<iostream>
 
-1494804006 e:\__cb_projects_for_debug\bead3_amoba_mm\jatekmester.hpp
+1494822314 e:\__cb_projects_for_debug\bead3_amoba_mm\jatekmester.hpp
 	"graphics.hpp"
 	"tabla.hpp"
 	"numbox.hpp"
 	<vector>
 
-1494801837 e:\__cb_projects_for_debug\bead3_amoba_mm\tabla.hpp
+1494817776 e:\__cb_projects_for_debug\bead3_amoba_mm\tabla.hpp
 	"widget.hpp"
 
 1492731077 e:\__cb_projects_for_debug\bead3_amoba_mm\widget.hpp
 	"graphics.hpp"
 	"color.hpp"
 
-1494776958 source:e:\__cb_projects_for_debug\bead3_amoba_mm\main.cpp
-	<iostream>
+1494817698 source:e:\__cb_projects_for_debug\bead3_amoba_mm\main.cpp
 	"jatekmester.hpp"
 
 1492731077 source:e:\__cb_projects_for_debug\bead3_amoba_mm\widget.cpp
 	"widget.hpp"
 
-1494802006 source:e:\__cb_projects_for_debug\bead3_amoba_mm\tabla.cpp
+1494822055 source:e:\__cb_projects_for_debug\bead3_amoba_mm\tabla.cpp
 	"tabla.hpp"
 	<cstdlib>
 

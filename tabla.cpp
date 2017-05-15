@@ -8,9 +8,8 @@ Tabla::Tabla(int posX_, int posY_, int width_, int height_) : Widget(posX_, posY
 {
     width=width_;
     height=height_;
-
-    colWidth=width/20; //KESOBBI FAZISBAN MAJD: NUMBOXTOL ELKER, SZAMOLAS ATALAKIT
-    lineHeight=height/20; //KESOBBI FAZISBAN MAJD: NUMBOXTOL ELKER, SZAMOLAS ATALAKIT
+    colWidth=width/20;
+    lineHeight=height/20;
 }
 
 void Tabla::Handle(event ev)
@@ -48,7 +47,6 @@ int Tabla::CalcDrawPosY(int IndexY)
 {
     return IndexY*lineHeight;
 }
-
 
 void Tabla::Draw()
 {

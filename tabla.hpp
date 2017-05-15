@@ -14,10 +14,8 @@ public:
     Tabla(int posX_, int posY_, int width_, int height_);
     virtual void Draw();
     virtual void Handle(genv::event ev);
-
     int CalcIndexX();
     int CalcIndexY();
-
     void DrawMark(int IndexX, int IndexY, bool isRed);
 };
 
