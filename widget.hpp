@@ -16,6 +16,7 @@ public:
     Color GetColorGout() {return colorWin;}
     virtual void Draw()=0;
     virtual void Handle(genv::event ev)=0;
+    bool isActive;
 };
 
 #endif

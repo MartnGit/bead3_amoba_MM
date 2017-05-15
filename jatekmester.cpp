@@ -2,7 +2,7 @@
 
 using namespace genv;
 
-JatekMester::JatekMester(int XX_, int YY_) : XX(XX_), YY(YY_), tabla(0,0, XX_, YY_), numBox(XX_/2, YY_/2, 10, 100), tablaMatrix(20,std::vector<int>(20,0))
+JatekMester::JatekMester(int XX_, int YY_) : XX(XX_), YY(YY_), startMenu(0,0, XX_, YY_), tabla(0,0, XX_, YY_), numBox(150, 420, 5, 200), tablaMatrix(20,std::vector<int>(20,0))
 {
     StartAllapot();
 }
@@ -10,11 +10,18 @@ JatekMester::JatekMester(int XX_, int YY_) : XX(XX_), YY(YY_), tabla(0,0, XX_, Y
 void JatekMester::EventCycle()
 {
     gout.open(XX,YY);
+    startMenu.Draw();
+    while(gin>>ev && ev.keycode!=key_enter)
+    {
+        numBox.Draw();
+        numBox.Handle(ev);
+    }
+    numBox.isActive=false;
 
     tabla.Draw();
     while(gin>>ev && ev.keycode!=key_escape)
     {
-        if(ev.type==ev_mouse && ev.button==btn_left && !win)
+        if(ev.type==ev_mouse && ev.button==btn_left && !win && (lepesSzam<numBox.GetNum()*2))
         {
             tabla.Handle(ev);
             LeRak();
@@ -25,10 +32,11 @@ void JatekMester::EventCycle()
                 FiveInDiagonalSE();
                 FiveInDiagonalSW();
                 BeteltE();
+                ++lepesSzam;
             }
         }
 
-        if((ev.type==ev_key && ev.keycode==key_space) && (win || !nemTeltBe))
+        if((ev.type==ev_key && ev.keycode==key_space) && (win || !nemTeltBe || lepesSzam>=numBox.GetNum()*2))
         {
             for(int i=0; i<tablaMatrix.size(); ++i){
                 for(int j=0; j<tablaMatrix.size(); ++j){
@@ -148,4 +156,5 @@ void JatekMester::StartAllapot()
     win=false;
     isRed=true;
     raktak=false;
+    lepesSzam=0;
 }
